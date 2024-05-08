@@ -12,6 +12,18 @@ body, main, section{
   flex-direction: column;
 }
 
+footer{
+  padding: 20px 0;
+  background: #3f586e;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+footer p{
+  margin: 5px;
+}
+
 /*EDITORAS E LANÇAMENTOS*/
 #editoras {
   display: flex;
