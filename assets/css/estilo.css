@@ -70,6 +70,14 @@ nav input{
   opacity: 70%;
 }
 
+.link_selecionado{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.link_selecionado:hover{
+  text-decoration: none;
+}
+
 footer{
   padding: 20px 0;
   background-color: #3f586e;
