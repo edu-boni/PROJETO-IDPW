@@ -404,10 +404,14 @@ footer p{
 #booktube #canais{
   background-color: #e0dfdf;
   height: 50vh;
-  margin: 20px;
-  width: 100%
+  margin: 30px;
+  width: 100%;
   border-radius: 10px;
-  color: white;
+  text-align: center;
+}
+
+#booktube #canais h4{
+  padding: 20px;
 }
 
 #booktube iframe{
