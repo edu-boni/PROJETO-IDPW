@@ -123,10 +123,7 @@ footer p{
   width: 70%;
   flex-wrap: wrap;
   border-radius: 50px;
-  padding: 30px 0;
   margin: 20px 0 30px 0;
-  background-color: #e0dfdf;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, .212);
 }
 
 .card-lancamento {
@@ -176,21 +173,65 @@ footer p{
 
 /*Minha biblioteca*/
 
+.bookmark{
+  height: 30px;
+  border: 30px solid transparent;
+  border-bottom: 20px solid #e0dfdf;
+  border-radius: 0 0 3px 3px;
+  position: absolute;
+  margin-left: 900px;
+  margin-top: -20px;
+}
+
+.mini_bookmark {
+  height: 0;
+  width: 0;
+  border-left: 10px solid #248B3D;
+  border-right: 10px solid #248B3D;
+  border-bottom: 8px solid transparent;
+  border-top: 20px solid #248B3D;
+  position: absolute;
+  margin-top: -192px;
+  margin-left: 95px;
+}
+
+.mini_bookmark_lendo{
+  height: 0;
+  width: 0;
+  border-left: 10px solid #52697d;
+  border-right: 10px solid #52697d;
+  border-bottom: 8px solid transparent;
+  border-top: 20px solid #52697d;
+  position: absolute;
+  margin-top: -192px;
+  margin-left: 95px;
+}
+
+.mini_bookmark_meta{
+  height: 0;
+  width: 0;
+  border-left: 10px solid #B42B30;
+  border-right: 10px solid #B42B30;
+  border-bottom: 8px solid transparent;
+  border-top: 20px solid #B42B30;
+  position: absolute;
+  margin-top: -192px;
+  margin-left: 95px;
+}
+
 #cards-biblioteca, #cards-biblioteca-inteira {
   justify-content: flex-start;
   display: flex;
   flex-direction: row;
-  border-radius: 50px 20px;
-  padding: 30px 0;
+  border-radius: 10px;
+  padding: 20px;
   margin: 20px 0 30px 0;
-  border: 2px outset #3f586e;
-  background-color: white;
+  background-color: #e0dfdf;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, .212);
   text-align: center;
 }
 
 #cards-biblioteca{
-
   flex-wrap: nowrap;
   min-width: 70%;
   max-width: 70%;
@@ -203,10 +244,20 @@ footer p{
   width: 70%;
 }
 
+.card-biblioteca img{
+  width: 120px;
+  height: 180px;
+  border-radius: 10px;
+}
+
 .estantes{
-  background-color:#a5aeb6;
-  border-radius: 15px;
-  width: 150px;
+  background-color:white;
+  border-radius: 5px;
+  width: 120px;
+}
+
+.estantes i{
+  font-size: 13px;
 }
 
 .card-biblioteca {  
@@ -217,9 +268,12 @@ footer p{
   flex-direction: column;
   margin: 10px;
   padding: 10px;
-  border-radius: 50px;
-  background: #fff;
+  border-radius: 30px;
   position: relative;
+}
+
+.card-biblioteca img{
+  object-fit: cover;
 }
 
 .btn {
@@ -241,8 +295,8 @@ footer p{
   position: absolute;
   bottom: 0;
   height: 10px; 
-  width: 100%; 
-  background-color: #cccccc; 
+  width: 120px; 
+  background-color: white; 
   border-radius: 10px;
 
 }
@@ -287,7 +341,10 @@ footer p{
 }
 
 .detalhes {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -300,7 +357,12 @@ footer p{
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s linear;
+  width: 110px;
 }
+.detalhes p{
+  margin: 10px;
+}
+
 
 .container-imagem:hover .detalhes {
   cursor:default;
