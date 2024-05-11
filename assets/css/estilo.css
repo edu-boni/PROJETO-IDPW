@@ -401,9 +401,18 @@ footer p{
   border-radius: 50px;
 }
 
+#booktube .bloco1 #recomendado{
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0 20px 20px;
+}
+#booktube .bloco1 #recomendado h3{
+  margin-bottom: 20px;
+}
+
 #booktube #canais{
   background-color: #e0dfdf;
-  height: 50vh;
+  height: 100%;
   margin: 30px;
   width: 100%;
   border-radius: 10px;
