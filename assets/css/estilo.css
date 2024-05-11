@@ -102,7 +102,7 @@ footer p{
   justify-content: flex-start;
   margin: 20px;
   padding: 25px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
   width: calc(70% - 40px);
   overflow-x: auto;
@@ -134,7 +134,7 @@ footer p{
   flex-direction: column;
   margin: 20px;
   padding: 25px;
-  border-radius: 50px;
+  border-radius: 10px;
   background: #eeecec;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
   width: 20%;
@@ -362,8 +362,6 @@ footer p{
 .detalhes p{
   margin: 10px;
 }
-
-
 .container-imagem:hover .detalhes {
   cursor:default;
   visibility: visible;
@@ -372,18 +370,15 @@ footer p{
 
 
 /*BOOKTUBE*/
-
 #booktube{
   width: 80%;
   display: flex;
   flex-direction: row;
 }
-
 #logo_booktube{
   width: 300px;
   margin-top: 40px;
 }
-
 #booktube #cabecalho_booktube{
   display: flex;
   flex-direction: row;
@@ -400,12 +395,10 @@ footer p{
   width: 60px;
   border-radius: 50px;
 }
-
 #booktube #cabecalho_booktube #inscricoes img:hover{
   opacity: 70%;
   cursor: pointer;
 }
-
 #booktube .bloco1 #recomendado{
   display: flex;
   align-items: flex-start;
@@ -414,7 +407,11 @@ footer p{
 #booktube .bloco1 #recomendado h3{
   margin-bottom: 20px;
 }
-
+#booktube iframe{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
 #booktube #canais{
   background-color: #e0dfdf;
   height: 100%;
@@ -422,13 +419,53 @@ footer p{
   width: 100%;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, .212);
 }
-
 #booktube #canais h4{
+  padding: 20px 0 0 0;
+}
+#booktube aside #cards_canais{
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
+#booktube aside #cards_canais .canal{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+}
+#booktube aside div div img{
+  margin: 0 10px 0 0;
+}
+#booktube aside div img{
+  width: 50px;
+  border-radius: 50px;
+}
 
-#booktube iframe{
-  width: 100%;
-  height: 300px;
+@media only screen and (max-width: 1100px) {
+  #booktube, #booktube #cabecalho_booktube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #booktube #cabecalho_booktube #inscricoes,  #booktube .bloco1 #recomendado{
+    align-items: center;
+    margin: 10px;
+  }
+  #booktube .bloco1 #recomendado h3{
+    margin: 10px;
+  }
+  #booktube #canais{
+    margin: 10px 0;
+  }
+  #cards-biblioteca{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .bookmark{
+    display: none;
+  }
 }
