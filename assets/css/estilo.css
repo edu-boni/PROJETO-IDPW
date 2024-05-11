@@ -401,6 +401,11 @@ footer p{
   border-radius: 50px;
 }
 
+#booktube #cabecalho_booktube #inscricoes img:hover{
+  opacity: 70%;
+  cursor: pointer;
+}
+
 #booktube .bloco1 #recomendado{
   display: flex;
   align-items: flex-start;
