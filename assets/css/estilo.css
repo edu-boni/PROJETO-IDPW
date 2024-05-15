@@ -12,6 +12,108 @@ body, main, section{
   flex-direction: column;
 }
 
+/*HOMEPAGE*/
+
+.corpoHome {
+  background-color: #3f586e;
+  overflow-x: hidden;
+}
+
+.cabecalhoHome {
+  align-items: flex-start;
+  margin-left: 310px;
+  margin-top: 40px;
+}
+
+.selecionado {
+  background-color: white;
+  padding: 85px 12px 5px;
+  border-radius: 2px;
+  color: #3f586e !important;
+}
+
+.cabecalhoHome nav li a:hover {
+  background-color: rgb(147, 168, 185);
+  padding: 85px 12px 5px;
+  border-radius: 2px;
+  color: white !important;
+}
+
+.login {
+  display: block;
+  margin-left: 614%;
+  margin-top: -80%;
+  width: 40%;
+}
+
+.infoHome {
+  margin-top: -1%;
+  margin-left: -7%;
+}
+
+.titulo {
+  align-items: flex-end !important;
+  margin-left: 67%;
+  display: flex;
+  font-size: 95px;
+  width: 100%;
+  margin-top: -35%;
+  color: white;
+}
+
+.subtitulo {
+  align-items: flex-start !important;
+  text-align: justify;
+  margin-left: 67.5%;
+  display: flex;
+  font-size: 22px;
+  width: 32%;
+  margin-top: 0%;
+  margin-bottom: 6%;
+  color: white;
+}
+
+.introHome {
+  margin-top: -5%;
+  width: 100%;
+  margin-right: 216%;
+}
+
+.intro {
+  width: 140%;
+}
+
+.cadastro {
+  display: block;
+  background-color: white;
+  color: #3f586e;
+  text-align: center !important;
+  width: 12%;
+  border-radius: 33px;
+  font-size: 22px;
+  margin-left: 67%;
+  margin-top: -4%;
+  text-decoration: none;
+  padding: 17px 32px;
+}
+
+.saibaMais {
+  display: block;
+  background-color: #3f586e;
+  color: white;
+  border: 1px solid white;
+  text-align: center !important;
+  width: 12%;
+  border-radius: 33px;
+  font-size: 21px;
+  margin-left: 84%;
+  margin-top: -4%;
+  text-decoration: none;
+  padding: 17px 32px;
+}
+
+/*INICIO LOGADO*/
+
 header{
   background-color: #3f586e;
   width: 100%;
