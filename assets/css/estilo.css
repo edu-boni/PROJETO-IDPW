@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
 
-body, main, section{
+body,
+main,
+section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +117,7 @@ body, main, section{
 
 /*INICIO LOGADO*/
 
-header{
+header {
   background-color: #3f586e;
   width: 100%;
   color: white;
@@ -126,12 +129,12 @@ header{
   padding: 20px 0;
 }
 
-header img{
+header img {
   width: 300px;
   margin-bottom: 10px;
 }
 
-ul{
+ul {
   display: flex;
   list-style: none;
   align-items: center;
@@ -139,48 +142,50 @@ ul{
   flex-wrap: wrap;
 }
 
-nav li a{
+nav li a {
   padding: 10px;
   color: white;
   text-decoration: none;
 }
 
-nav li{
+nav li {
   margin: 10px;
 }
 
-nav li a:hover{
+nav li a:hover {
   background-color: white;
   border-radius: 20px;
   color: #3f586e;
 }
 
-nav input{
+nav input {
   padding: 10px;
   border-radius: 20px;
   border: none;
 }
 
-#lupa{
+#lupa {
   position: absolute;
   margin-left: -50px;
   color: #3f586e;
   margin-top: -2px;
 }
-#lupa:hover{
+
+#lupa:hover {
   background: none;
   opacity: 70%;
 }
 
-.link_selecionado{
+.link_selecionado {
   text-decoration: underline;
   text-underline-offset: 10px;
 }
-.link_selecionado:hover{
+
+.link_selecionado:hover {
   text-decoration: none;
 }
 
-footer{
+footer {
   padding: 20px 0;
   background-color: #3f586e;
   color: white;
@@ -188,7 +193,8 @@ footer{
   text-align: center;
   margin-top: 50px;
 }
-footer p{
+
+footer p {
   margin: 5px;
 }
 
@@ -199,7 +205,7 @@ footer p{
   justify-content: center;
 }
 
-.card-editora {  
+.card-editora {
   display: flex;
   justify-content: flex-start;
   margin: 20px;
@@ -211,7 +217,8 @@ footer p{
   scrollbar-width: thin;
   background-color: #e0dfdf;
 }
-.editora{
+
+.editora {
   border-radius: 100px;
   margin: 10px;
   object-fit: cover;
@@ -241,7 +248,8 @@ footer p{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
   width: 20%;
 }
-.card-lancamento img{
+
+.card-lancamento img {
   margin: 10px;
 }
 
@@ -257,25 +265,28 @@ footer p{
 }
 
 @media only screen and (max-width: 1100px) {
-  #cards-lancamento{
+  #cards-lancamento {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
   }
-  .card-lancamento{
+
+  .card-lancamento {
     width: 200px;
   }
-  .card-editora{
+
+  .card-editora {
     width: 75%;
   }
-  .editora{
+
+  .editora {
     width: 40% !important;
   }
 }
 
 /*Minha biblioteca*/
 
-.bookmark{
+.bookmark {
   height: 30px;
   border: 30px solid transparent;
   border-bottom: 20px solid #e0dfdf;
@@ -297,7 +308,7 @@ footer p{
   margin-left: 95px;
 }
 
-.mini_bookmark_lendo{
+.mini_bookmark_lendo {
   height: 0;
   width: 0;
   border-left: 10px solid #52697d;
@@ -309,7 +320,7 @@ footer p{
   margin-left: 95px;
 }
 
-.mini_bookmark_meta{
+.mini_bookmark_meta {
   height: 0;
   width: 0;
   border-left: 10px solid #B42B30;
@@ -321,7 +332,8 @@ footer p{
   margin-left: 95px;
 }
 
-#cards-biblioteca, #cards-biblioteca-inteira {
+#cards-biblioteca,
+#cards-biblioteca-inteira {
   justify-content: flex-start;
   display: flex;
   flex-direction: row;
@@ -333,7 +345,7 @@ footer p{
   text-align: center;
 }
 
-#cards-biblioteca{
+#cards-biblioteca {
   flex-wrap: nowrap;
   min-width: 70%;
   max-width: 70%;
@@ -341,28 +353,28 @@ footer p{
   overflow-x: auto;
 }
 
-#cards-biblioteca-inteira{
+#cards-biblioteca-inteira {
   flex-wrap: wrap;
   width: 70%;
 }
 
-.card-biblioteca img{
+.card-biblioteca img {
   width: 120px;
   height: 180px;
   border-radius: 10px;
 }
 
-.estantes{
-  background-color:white;
+.estantes {
+  background-color: white;
   border-radius: 5px;
   width: 120px;
 }
 
-.estantes i{
+.estantes i {
   font-size: 13px;
 }
 
-.card-biblioteca {  
+.card-biblioteca {
   text-align: center;
   display: flex;
   align-items: center;
@@ -374,40 +386,40 @@ footer p{
   position: relative;
 }
 
-.card-biblioteca img{
+.card-biblioteca img {
   object-fit: cover;
 }
 
 .btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #ffffff;
-    background-color: #3f586e;
-    text-align: center;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    text-decoration: none;
-    margin: 5px;
+  display: inline-block;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #3f586e;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  text-decoration: none;
+  margin: 5px;
 }
 
-.barra-progresso{
+.barra-progresso {
   position: absolute;
   bottom: 0;
-  height: 10px; 
-  width: 120px; 
-  background-color: white; 
+  height: 10px;
+  width: 120px;
+  background-color: white;
   border-radius: 10px;
 
 }
 
 .conteudo-barra {
-  height: 100%; 
-  background-color: #4c6c88; 
-  border-radius: 10px; 
-  
+  height: 100%;
+  background-color: #4c6c88;
+  border-radius: 10px;
+
 }
 
 .cards-container .page {
@@ -426,7 +438,7 @@ footer p{
 
 .paginacao .page-link {
   display: inline-block;
-  background-color:#3f586e;
+  background-color: #3f586e;
   width: 50px;
   border-radius: 5px;
   margin: 0 5px;
@@ -461,60 +473,123 @@ footer p{
   transition: visibility 0s, opacity 0.3s linear;
   width: 110px;
 }
-.detalhes p{
+
+.detalhes p {
   margin: 10px;
 }
+
 .container-imagem:hover .detalhes {
-  cursor:default;
+  cursor: default;
   visibility: visible;
   opacity: 1;
 }
 
 
+/*BUSCA LIVRO*/
+#cards-buscar {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  border-radius: 50px;
+  margin: 20px 0 30px 0;
+}
+
+.card-buscar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 10px;
+  background: #eeecec;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+  width: 70%;
+}
+
+.data{
+  color: gray;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.leitor {
+  text-align: center;
+}
+
+.link-buscar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-buscar:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.ul-buscar {
+  display: block;
+}
+
 /*BOOKTUBE*/
-#booktube{
+#booktube {
   width: 80%;
   display: flex;
   flex-direction: column;
 }
-#logo_booktube{
+
+#logo_booktube {
   width: 300px;
   margin-top: 40px;
 }
-#booktube #cabecalho_booktube{
+
+#booktube #cabecalho_booktube {
   display: flex;
   flex-direction: row;
 }
-#booktube #cabecalho_booktube #inscricoes{
+
+#booktube #cabecalho_booktube #inscricoes {
   display: flex;
   align-items: flex-start;
   margin-left: 50px;
 }
-#booktube #cabecalho_booktube h3{
+
+#booktube #cabecalho_booktube h3 {
   margin: 0 0 10px 0;
 }
-#booktube #cabecalho_booktube #inscricoes img{
+
+#booktube #cabecalho_booktube #inscricoes img {
   width: 60px;
   border-radius: 50px;
 }
-#booktube #cabecalho_booktube #inscricoes img:hover{
+
+#booktube #cabecalho_booktube #inscricoes img:hover {
   opacity: 70%;
   cursor: pointer;
 }
-#booktube .bloco1 #recomendado{
+
+#booktube .bloco1 #recomendado {
   display: flex;
   align-items: flex-start;
   margin: 20px 0 20px 20px;
 }
-#booktube .bloco1 #recomendado h3{
+
+#booktube .bloco1 #recomendado h3 {
   margin-bottom: 20px;
 }
-#booktube iframe{
+
+#booktube iframe {
   width: 100%;
   height: 300px;
   border-radius: 10px;
 }
-#booktube #canais{
+
+#booktube #canais {
   background-color: #e0dfdf;
   height: 88%;
   margin: 30px;
@@ -523,32 +598,39 @@ footer p{
   text-align: center;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, .212);
 }
-#booktube #canais h4{
+
+#booktube #canais h4 {
   padding: 20px 0 0 0;
 }
-#booktube aside #cards_canais{
+
+#booktube aside #cards_canais {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
-#booktube aside #cards_canais .canal{
+
+#booktube aside #cards_canais .canal {
   display: flex;
   align-items: center;
   flex-direction: row;
   margin: 10px;
 }
-#booktube aside div div img{
+
+#booktube aside div div img {
   margin: 0 10px 0 0;
 }
-#booktube aside div img{
+
+#booktube aside div img {
   width: 50px;
   border-radius: 50px;
 }
-#booktube #topo{
+
+#booktube #topo {
   display: flex;
   flex-direction: row;
 }
-#booktube #videos{
+
+#booktube #videos {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -557,40 +639,51 @@ footer p{
   justify-content: center;
   padding: 20px;
 }
-#booktube #videos img{
+
+#booktube #videos img {
   width: 250px;
   margin: 10px;
   border-radius: 10px;
 }
-#booktube #videos img:hover{
+
+#booktube #videos img:hover {
   opacity: 70%;
 }
 
 
 @media only screen and (max-width: 1200px) {
-  #booktube, #booktube #cabecalho_booktube, #booktube #topo{
+
+  #booktube,
+  #booktube #cabecalho_booktube,
+  #booktube #topo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  #booktube #cabecalho_booktube #inscricoes,  #booktube .bloco1 #recomendado{
+
+  #booktube #cabecalho_booktube #inscricoes,
+  #booktube .bloco1 #recomendado {
     align-items: center;
     margin: 10px;
   }
-  #booktube .bloco1 #recomendado h3{
+
+  #booktube .bloco1 #recomendado h3 {
     margin: 10px;
   }
-  #booktube #canais{
+
+  #booktube #canais {
     margin: 10px 0;
   }
-  #cards-biblioteca{
+
+  #cards-biblioteca {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
-  .bookmark{
+
+  .bookmark {
     display: none;
   }
 }
