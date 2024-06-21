@@ -597,13 +597,11 @@ small {
   display: inline-block;
 }
 
-.botao_add {
-  width: 100%;
+.botao_add, .botao_lido, .botao_rm{
   margin-top: 3px;
   display: inline-block;
   font-weight: 400;
   color: #ffffff;
-  background-color: #3f586e;
   text-align: center;
   border: 1px solid transparent;
   padding: .375rem .75rem;
@@ -611,6 +609,27 @@ small {
   line-height: 1.5;
   border-radius: .25rem;
   text-decoration: none;
+}
+
+.botao_lido{
+  background-color: #2f812c;
+  width: 212px;
+}
+
+.botao_rm{
+  background-color: #be3f3f;
+  cursor: pointer;
+  width: 212px;
+  transition: background-color 0.3s ease;
+}
+
+.botao_rm:hover {
+  background-color: #f05050;
+}
+
+.botao_add {
+  background-color: #3f586e;
+  width: 100%;
   cursor: pointer;
 }
 
