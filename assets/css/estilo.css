@@ -816,6 +816,33 @@ small {
   opacity: 70%;
 }
 
+#perfil{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+.foto_perfil{
+  width: 20%;
+}
+.foto_perfil img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.organizacao div div{
+  text-align: center;
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  background-color: #e0dfdf;
+  width: 80px;
+  height: 60px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.organizacao{
+  margin: 0 0 0 10px;
+}
 
 @media only screen and (max-width: 1200px) {
 
