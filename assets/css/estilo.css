@@ -56,9 +56,6 @@ section {
   flex-direction: row;
   min-height: 80vh;
 }
-#homePage div{
-  margin: 0 0 0 -60px;
-}
 #homePage .intro{
   width: 110%;
 }
