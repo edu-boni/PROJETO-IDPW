@@ -26,7 +26,18 @@ section {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 80%;
+  width: 90%;
+}
+
+.cabecalhoHome input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.cabecalhoHome .btn_entrar{
+  background-color: #f5f5f5;
+  color: #3f586e;
 }
 
 .selecionado{
@@ -56,13 +67,9 @@ section {
   flex-direction: row;
   min-height: 80vh;
 }
-#homePage .intro{
-  width: 110%;
-}
 #homePage img{
   width: 100%;
 }
-
 #homePage div{
   width: 30vw;
 }
@@ -916,10 +923,15 @@ table{
     margin: 0;
   }
   #homePage div{
-    width: 80%;
+    width: 50%;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  #homePage .intro{
+    width: 100%;
+  }
   #booktube,
   #booktube #cabecalho_booktube,
   #booktube #topo {
@@ -956,6 +968,23 @@ table{
 }
 
 @media only screen and (max-width: 970px) {
+  .cabecalhoHome{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cabecalhoHome form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cabecalhoHome form input{
+    margin: 5px;
+  }
+  .cabecalhoHome .btn_entrar{
+    width: 95%;
+  }
   #perfil{
     display: flex;
     align-items: center;
