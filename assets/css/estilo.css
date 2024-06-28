@@ -83,7 +83,7 @@ section {
 }
 
 .intro {
-  width: 140%;
+  width: 80%;
 }
 
 .cadastro {
@@ -820,16 +820,17 @@ small {
   display: flex;
   flex-direction: row;
   width: 80%;
+  margin: 0 0 0 120px;
 }
 .foto_perfil{
   width: 20%;
 }
 .foto_perfil img{
-  width: 100%;
+  width: 90%;
   border-radius: 5px;
 }
 
-.organizacao div div{
+.organizacao #blocos div{
   text-align: center;
   display: inline-block;
   margin: 10px 10px 0 0;
@@ -837,13 +838,72 @@ small {
   width: 80px;
   height: 60px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 5px; 
+}
+.organizacao #blocos div:hover{
+  background-color: #eeecec;
 }
 
 .organizacao{
   margin: 0 0 0 10px;
 }
 
+#perfil_posts{
+  width: 70%;
+  margin: 50px 0 0 0;
+}
+
+#perfil_posts article{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  width: 80%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+  margin: 10px;
+}
+#perfil_posts article div{
+  text-align: justify;
+  margin: 10px;
+}
+#perfil_posts article img{
+  height: 150px;
+  border-radius: 5px;
+}
+th{
+  background-color: #3f586e;
+  color: #f5f5f5;
+}
+table, td{
+  background-color: #e0dfdf;
+  border: 1px solid #eeecec;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+table{
+  width: 85%;
+  margin-top: 20px;
+}
+.btn_config{
+  width: 80%;
+  background-color: #3f586e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px 0 0 0;
+}
+.btn_config:hover{
+  opacity: 70%;
+  cursor: pointer;
+}
+#foto_resp{
+  display: none;
+}
+#config_perfil{
+  display: none;
+}
 @media only screen and (max-width: 1200px) {
 
   #booktube,
@@ -878,5 +938,78 @@ small {
 
   .bookmark {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  #perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+  #perfil .organizacao{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .foto_perfil img{
+    display: none;
+  }
+  #foto_resp{
+    display: block;
+    width: 200px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .organizacao .parte1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #blocos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .foto_perfil div{
+    display: none;
+  }
+  #config_perfil{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn_config{
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+  .table{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #perfil_posts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #perfil_posts article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #perfil_posts img{
+    margin: 0 0 20px 0;
   }
 }
