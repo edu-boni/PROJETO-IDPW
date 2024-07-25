@@ -18,37 +18,42 @@
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
+        <form action="logado/inicio.html">
+            <h4>Login</h4>
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="Senha">
+            <a href="logado/inicio.html"><input type="submit" class="btn_entrar" value="Entrar" style="cursor: pointer;"></a>
+        </form>
     </header>
 
-    <main id="formCadastro">
-        <div id="cardCadastro">
+    <main id="cardCadastro">
+        <div id="formCadastro">
             <h1 class="tituloC">Cadastre-se</h1>
+            <p><a href="login.html" class="linkCadastro">Já tem uma conta? <strong>Clique aqui!</strong></a></p>
             <div class="form-group">
-                <label for="name"><img class="icon" width="28" height="28" src="https://img.icons8.com/fluency-systems-filled/48/user.png" alt="user"/></label>
+                <label for="name"><img src="https://img.icons8.com/fluency-systems-filled/48/user.png" alt="user"/></label>
                 <input type="text" name="name" id="name" placeholder="Seu nome" />
             </div>
             <div class="form-group">
-                <label for="email"><img class="iconE" width="24" height="24" src="https://img.icons8.com/material-rounded/24/new-post.png" alt="new-post"/></label>
+                <label for="email"><img src="https://img.icons8.com/material-rounded/24/new-post.png" alt="new-post"/></label>
                 <input type="email" name="email" id="email" placeholder="Seu email" />
             </div>
             <div class="form-group">
-                <label for="senha"><img class="iconS" width="24" height="24" src="https://img.icons8.com/metro/26/lock.png" alt="lock"/></label>
+                <label for="senha"><img src="https://img.icons8.com/metro/26/lock.png" alt="lock"/></label>
                 <input type="password" name="senha" id="senha" placeholder="Senha" />
             </div>
             <div class="form-group">
-                <label for="cSenha"><img class="iconC" width="24" height="26" src="https://img.icons8.com/ios/50/lock--v1.png" alt="lock--v1"/></label>
+                <label for="cSenha"><img src="https://img.icons8.com/ios/50/lock--v1.png" alt="lock--v1"/></label>
                 <input type="password" name="cSenha" id="cSenha" placeholder="Confirme sua senha" />
             </div>
-            <div class="form-group">
+            <div class="euconcordo">
                 <input type="checkbox" name="termos" id="termos" class="termos" />
                 <label for="termos" class="termos"><span><span></span></span>Eu concordo com os<a href="#" class="termos">Termos de Privacidade</a></label>
             </div>
-            <div class="form-group form-button">
+            <div class="form-button">
                 <a href="login.html"><input type="submit" name="cadastro" id="cadastro" class="form-submit" value="Cadastrar" /></a>
             </div>
-            <p><a href="login.html" class="linkCadastro">Já tem uma conta? <strong>Clique aqui!</strong></a></p>
         </div> 
-
         <div class="imagem">
             <img class="imgCad" src="../assets/image/cadastro.png" alt="ilustração">
         </div>

@@ -120,65 +120,53 @@ section {
 
 /*CADASTRO-LOGIN*/
 
-#cardCadastro {
-  width: 55vw;
-  height: 60vh;
-  padding: 60px 0px;
-  display: block;
-  justify-content: center;
-  margin-top: 3%;
-  border-radius: 20px;
+#cardCadastro{
   background-color: white;
+  width: 60%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 50px;
   color: black;
 }
-
-.tituloC {
-  display: inline-block;
-  margin-left: 8%;
-  font-size: 40px;
-  width: 14vw;
-  height: 6vh;
+#formCadastro {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.form-group {
-  margin-top: 4%;
-  margin-left: 8%;
+#cardCadastro .imagem{
+  margin: 0 50px 0 0;
 }
 
-.icon {
-  position: absolute;
-  top: 295px;
-  left: 533px;
+#cardCadastro #formCadastro a{
+  text-decoration: none;
 }
 
-.iconE {
-  position: absolute;
-  top: 376px;
-  left: 535px;
+#formCadastro .form-button{
+  width: 200%;
+  margin: 0 20px;
 }
 
-.iconE2 {
-  position: absolute;
-  top: 318px;
-  left: 535px;
+#cardCadastro .imgCad{
+  width: 30vw;
 }
 
-.iconS {
-  position: absolute;
-  top: 454px;
-  left: 532px;
+.form-group{
+  margin-top: 25px;
+  width: 200%;
+  display: flex;
+  align-items: center;
 }
 
-.iconS2 {
-  position: absolute;
-  top: 399px;
-  left: 532px;
+.euconcordo{
+  margin: 20px;
 }
-
-.iconC {
-  position: absolute;
-  top: 531px;
-  left: 537px;
+.form-group label img{
+  width: 24px;
 }
 
 .iconFacebook {
@@ -271,24 +259,11 @@ a {
   outline: none; 
 }
 
-.imgCad {
-  position: absolute;
-  width: 25%;
-  margin-top: -31%;
-}
-
 .imgLog {
   position: absolute;
   width: 20%;
   margin-top: -27%;
   margin-left: 3%;
-}
-
-.linkCadastro {
-  text-decoration: none;
-  position: absolute;
-  margin-left: 33%;
-  margin-top: -2%;
 }
 
 .linkLogin {
@@ -351,7 +326,7 @@ ul {
 }
 
 nav li a {
-  padding: 10px;
+  padding: 85px 12px 5px;
   color: white;
   text-decoration: none;
 }
@@ -1268,4 +1243,19 @@ table{
   #perfil_posts img{
     margin: 0 0 20px 0;
   }
+  #cardCadastro{
+    flex-direction: column;
+  }
+  #cardCadastro #formCadastro{
+    width: 100%;
+    margin: 0 -30px 0 0;
+  }
+  #cardCadastro .imagem{
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+  #cardCadastro .imagem img{
+    width: 100%;
+  }
+
 }
