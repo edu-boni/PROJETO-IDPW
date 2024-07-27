@@ -347,6 +347,10 @@ nav input {
   border: none;
 }
 
+#NavLogado a{
+  padding: 10px;
+}
+
 #lupa {
   position: absolute;
   margin-left: -50px;
