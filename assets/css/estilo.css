@@ -119,6 +119,56 @@ section {
 }
 
 /*CADASTRO-LOGIN*/
+#login{
+  width: 100%;
+}
+#cardLogin{
+  background-color: white;
+  width: 55%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#imgLog{
+  width: 20vw;
+}
+.euconcordo{
+  margin: 20px 0;
+}
+#formLogin{
+  color: black;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
+}
+#formLogin .form-submit{
+  text-align: center;
+  width: 100%;
+}
+#cardLogin>div{
+  margin: 0 50px 0 0;
+}
+#cardLogin a{
+  text-decoration: none;
+}
+#formLogin #redes{
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+#formLogin #redes p{
+  margin: 0 5px 0 0;
+}
+#formLogin #redes img:hover{
+  opacity: 60%;
+  cursor: pointer;
+}
+#formLogin #redes{
+  gap: 10px;
+}
 
 #cardCadastro{
   background-color: white;
@@ -140,16 +190,15 @@ section {
 }
 
 #cardCadastro .imagem{
-  margin: 0 50px 0 0;
+  margin: 0 0 0 50px;
 }
 
 #cardCadastro #formCadastro a{
   text-decoration: none;
 }
 
-#formCadastro .form-button{
-  width: 200%;
-  margin: 0 20px;
+.form-button input{
+  width: 100%;
 }
 
 #cardCadastro .imgCad{
@@ -158,57 +207,14 @@ section {
 
 .form-group{
   margin-top: 25px;
-  width: 200%;
   display: flex;
   align-items: center;
 }
 
-.euconcordo{
-  margin: 20px;
-}
 .form-group label img{
   width: 24px;
 }
 
-.iconFacebook {
-  position: absolute;
-  margin-left: 13.5%;
-  top: 609px;
-  margin-top: 2%;
-  cursor: pointer;
-}
-
-.iconFacebook:hover {
-  width: 42px;
-  height: 42px;
-  transition: 0.10s ease;
-}
-
-.iconGoogle {
-  position: absolute;
-  top: 650px;
-  margin-left: 19.2%;
-  cursor: pointer;
-}
-
-.iconGoogle:hover {
-  width: 38px;
-  height: 38px;
-  transition: 0.10s ease;
-}
-
-.iconTwitter{
-  position: absolute;
-  top: 647px;
-  margin-left: 16.3%;
-  cursor: pointer;
-}
-
-.iconTwitter:hover {
-  width: 45px;
-  height: 45px;
-  transition: 0.10s ease;
-}
 
 input#name, input#email, input#senha, input#cSenha {
   border: none;
@@ -216,7 +222,7 @@ input#name, input#email, input#senha, input#cSenha {
   border-bottom: 1px solid #ccc;
   margin-top: -1%;
   margin-left: 4%;
-  width: 35%;
+  width: 100%;
   padding: 10px 0;
   font-size: 15px;
   transition: border-color 0.3s;
@@ -260,22 +266,6 @@ a {
   outline: none; 
 }
 
-.imgLog {
-  position: absolute;
-  width: 20%;
-  margin-top: -27%;
-  margin-left: 3%;
-}
-
-.linkLogin {
-  width: 16vw;
-  height: 2vh;
-  text-decoration: none;
-  position: absolute;
-  margin-left: 32.5%;
-  margin-top: -0.5%;
-}
-
 .linkLogin:hover, .linkCadastro:hover {
   text-decoration: underline;
 }
@@ -286,18 +276,12 @@ input#email2, input#senha2 {
   border-bottom: 1px solid #ccc;
   margin-top: -1%;
   margin-left: 4%;
-  width: 35%;
+  width: 100%;
   padding: 10px 0;
   font-size: 15px;
   transition: border-color 0.3s;
 }
 
-.lSocial {
-  margin-top: 5.5%;
-  margin-left: 8%;
-  width: 8vw;
-  height: 2vh;
-}
 
 /*INICIO LOGADO*/
 
@@ -1115,23 +1099,28 @@ table{
   margin-top: -60%;
 }
 
-.sobreCards {
-  align-items: flex-start;
+#sobre{
+  display: flex;
+  justify-content: flex-start;
+}
+.sobreCards{
+  min-height: 100vh;
+  flex-wrap: wrap;
+  margin: 120px 0 0 0;
 }
 
 .cardP {
   text-align: center;
-  margin-top: 45%;
   padding: 20px;
   border-radius: 10px;
   background-color: #c6d3dd;
   min-height: 10vh;
-  width: 20vw;
-  margin-bottom: 45%;
+  width: 300px;
 }
 
 .cardP:hover {
   box-shadow: 1px 3px 7px 1px #ffffff;
+  cursor: pointer;
 }
 
 .nomeP {
@@ -1146,10 +1135,13 @@ table{
 }
 
 .corpoP {
-  margin-top: 8%;
+  margin: 10px;
   font-size: 15px;
   color: #283742e7;
   display: none;
+}
+.corpoP img{
+  border-radius: 10px;
 }
 
 .cardP:hover .corpoP{
@@ -1160,7 +1152,6 @@ table{
   color: white;
   width: 45px;
   height: 45px;
-  margin-top: 12%;
   padding: 3px;
 }
 
@@ -1171,11 +1162,19 @@ table{
 
 .sobreCards {
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
   gap: 50px;
 }
 
 @media only screen and (max-width: 1200px) {
+  .sobreCards{
+    flex-direction: column;
+    margin: 30px 0 0;
+  }
+  .cardP{
+    margin: 110px 0 0 0;
+  }
   #homePage .texto div{
     display: flex;
     align-items: center;
@@ -1336,7 +1335,6 @@ table{
   }
   #cardCadastro #formCadastro{
     width: 100%;
-    margin: 0 -30px 0 0;
   }
   #cardCadastro .imagem{
     width: 100%;
@@ -1345,6 +1343,19 @@ table{
   #cardCadastro .imagem img{
     width: 100%;
   }
-
+  #cardLogin{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  #formLogin{
+    width: 80%;
+  }
+  #cardLogin>div img{
+    width: 100%;
+  }
+  #cardLogin>div{
+    margin: 0 50px 50px 50px;
+  }
 }
 
