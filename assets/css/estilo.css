@@ -125,14 +125,14 @@ section {
 }
 #cardLogin{
   background-color: white;
-  width: 55%;
+  width: 50%;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #imgLog{
-  width: 20vw;
+  width: 17vw;
 }
 .euconcordo{
   margin: 20px 0;
@@ -172,15 +172,15 @@ section {
 
 #cardCadastro{
   background-color: white;
-  width: 50%;
+  width: 46%;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 50px;
+  padding: 41px;
   color: black;
-  margin-top: 1.5%;
+  margin-top: 3.5%;
 }
 #formCadastro {
   width: 60%;
@@ -198,11 +198,13 @@ section {
 }
 
 .form-button input{
-  width: 100%;
+  width: 86%;
+  margin-top: 3%;
 }
 
 #cardCadastro .imgCad{
-  width: 25vw;
+  width: 20vw;
+  margin-left: -7%;
 }
 
 .form-group{
@@ -215,14 +217,13 @@ section {
   width: 24px;
 }
 
-
 input#name, input#email, input#senha, input#cSenha {
   border: none;
   outline: none;
   border-bottom: 1px solid #ccc;
   margin-top: -1%;
   margin-left: 4%;
-  width: 100%;
+  width: 77%;
   padding: 10px 0;
   font-size: 15px;
   transition: border-color 0.3s;
@@ -238,6 +239,10 @@ input#name::placeholder, input#email::placeholder, input#senha::placeholder, inp
 
 input#name:focus::placeholder, input#email:focus::placeholder, input#senha:focus::placeholder, input#cSenha:focus::placeholder {
   color: #555;
+}
+
+#footerC {
+  margin-top: 15%;
 }
 
 .termos {
@@ -276,7 +281,7 @@ input#email2, input#senha2 {
   border-bottom: 1px solid #ccc;
   margin-top: -1%;
   margin-left: 4%;
-  width: 100%;
+  width: 77%;
   padding: 10px 0;
   font-size: 15px;
   transition: border-color 0.3s;
@@ -1105,7 +1110,7 @@ table{
   margin: 20px 0 0 0;
 }
 .sobreCards{
-  min-height: 100vh;
+  min-height: 80vh;
   flex-wrap: wrap;
   margin: 120px 0 0 0;
 }

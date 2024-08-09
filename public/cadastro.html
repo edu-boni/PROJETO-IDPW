@@ -9,53 +9,76 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <title>Livrai-nos</title>
 </head>
-<body class="corpoHome">
+<body class="corpoHome" id="cadastroB">
     <header class="cabecalhoHome">
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="cadastro.html" class="selecionado">Cadastro</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
-
-    <main id="cardCadastro">
+    <!-- Seção Principal para o formulário de cadastro -->
+    <main id="cardCadastro" class="cadVw">
+        <!-- Formulário de cadastro -->
         <form action="login.html" method="" id="formCadastro">
+            <!-- Título do formulário -->
             <h1 class="tituloC">Cadastre-se</h1>
+            <!-- Link para login para quem já tem conta -->
             <p><a href="login.html" class="linkCadastro">Já tem uma conta? <strong>Clique aqui!</strong></a></p>
+            <!-- Campo para nome do usuário -->
             <div class="form-group">
-                <label for="name"><img src="https://img.icons8.com/fluency-systems-filled/48/user.png" alt="user"/></label>
+                <label for="name">
+                    <img src="https://img.icons8.com/fluency-systems-filled/48/user.png" alt="user"/>
+                </label>
                 <input type="text" name="name" id="name" placeholder="Seu nome" />
             </div>
+            <!-- Campo para email do usuário -->
             <div class="form-group">
-                <label for="email"><img src="https://img.icons8.com/material-rounded/24/new-post.png" alt="new-post"/></label>
+                <label for="email">
+                    <img src="https://img.icons8.com/material-rounded/24/new-post.png" alt="new-post"/>
+                </label>
                 <input type="email" name="email" id="email" placeholder="Seu email" />
             </div>
+            <!-- Campo para senha do usuário -->
             <div class="form-group">
-                <label for="senha"><img src="https://img.icons8.com/metro/26/lock.png" alt="lock"/></label>
+                <label for="senha">
+                    <img src="https://img.icons8.com/metro/26/lock.png" alt="lock"/>
+                </label>
                 <input type="password" name="senha" id="senha" placeholder="Senha" />
             </div>
+            <!-- Campo para confirmar senha -->
             <div class="form-group">
-                <label for="cSenha"><img src="https://img.icons8.com/ios/50/lock--v1.png" alt="lock--v1"/></label>
+                <label for="cSenha">
+                    <img src="https://img.icons8.com/ios/50/lock--v1.png" alt="lock--v1"/>
+                </label>
                 <input type="password" name="cSenha" id="cSenha" placeholder="Confirme sua senha" />
             </div>
+            <!-- Caixa de seleção para aceitar termos de privacidade -->
             <div class="euconcordo">
                 <input type="checkbox" name="termos" id="termos" class="termos" />
-                <label for="termos" class="termos"><span><span></span></span>Eu concordo com os<a href="#" class="termos">Termos de Privacidade</a></label>
+                <label for="termos" class="termos">
+                    <span><span></span></span>Eu concordo com os
+                    <a href="#" class="termos">Termos de Privacidade</a>
+                </label>
             </div>
+            <!-- Botão de envio do formulário -->
             <div class="form-button">
-                <a href="login.html"><input type="submit" name="cadastro" id="cadastro" class="form-submit" value="Cadastrar" /></a>
+                <a href="login.html">
+                    <input type="submit" name="cadastro" id="cadastro" class="form-submit" value="Cadastrar" />
+                </a>
             </div>
         </form> 
+        <!-- Imagem ilustrativa ao lado do formulário -->
         <div class="imagem">
             <img class="imgCad" src="../assets/image/cadastro.png" alt="ilustração">
         </div>
     </main>
-    <footer>
+    <footer id="footerC">
         <p>Introdução ao Desenvolvimento de Páginas Web - TSI</p>
         <p>Ana Ligia, Eduardo e Gabriel Albino</p>
         <p>Copyright© 2024 IFSP - Campus Araraquara</p>
     </footer>
 </body>
+</html>

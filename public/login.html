@@ -15,45 +15,63 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="login.html" class="selecionado">Login</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
-<main id="login">
-    <div id="cardLogin">
-        <form action="../logado/inicio.html" method="" id="formLogin">
-            <h1 class="tituloC">Entre</h1>
-            <p><a href="cadastro.html" class="linkLogin">Ainda não tem uma conta? <strong>Crie aqui!</strong></a></p>
-            <div class="form-group">
-                <label for="email"><img class="iconE2" width="24" height="24" src="https://img.icons8.com/material-rounded/24/new-post.png" alt="new-post"/></label>
-                <input type="email" name="email" id="email2" placeholder="Seu email" />
+    <!-- Seção principal para o formulário de login -->
+    <main id="login">
+        <div id="cardLogin">
+            <!-- Formulário de login -->
+            <form action="../logado/inicio.html" method="" id="formLogin">
+                <h1 class="tituloC">Entre</h1>
+                <!-- Link para cadastro de uma nova conta -->
+                <p><a href="cadastro.html" class="linkLogin">Ainda não tem uma conta? <strong>Crie aqui!</strong></a></p>
+                <!-- Campo de entrada para email -->
+                <div class="form-group">
+                    <label for="email">
+                        <img class="iconE2" width="24" height="24" src="https://img.icons8.com/material-rounded/24/new-post.png" alt="new-post"/>
+                    </label>
+                    <input type="email" name="email" id="email2" placeholder="Seu email" />
+                </div>
+                <!-- Campo de entrada para senha -->
+                <div class="form-group">
+                    <label for="senha">
+                        <img class="iconS2" width="24" height="24" src="https://img.icons8.com/metro/26/lock.png" alt="lock"/>
+                    </label>
+                    <input type="password" name="senha" id="senha2" placeholder="Senha" />
+                </div>
+                <!-- Caixa de seleção para manter o usuário conectado -->
+                <div class="form-group">
+                    <input type="checkbox" name="termos" id="termos" class="termos" />
+                    <label for="termos" class="termos">
+                        <span><span></span></span>Manter Conectado
+                    </label>
+                </div>
+                <!-- Botão de envio do formulário -->
+                <div class="form-button">
+                    <a href="login.html">
+                        <input type="submit" name="cadastro" id="cadastro" class="form-submit" value="Entrar" />
+                    </a>
+                </div>
+                <!-- Seção de redes sociais para login -->
+                <div id="redes">
+                    <p>Ou se conecte com</p>
+                    <img class="iconFacebook" width="38" height="38" src="https://img.icons8.com/fluency/48/facebook.png" alt="facebook"/>
+                    <img class="iconGoogle" width="36" height="36" src="https://img.icons8.com/fluency/48/google-logo.png" alt="google-logo"/>
+                    <img class="iconTwitter" width="41" height="41" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"/>
+                </div>
+            </form> 
+            <!-- Imagem ilustrativa ao lado do formulário -->
+            <div>
+                <img id="imgLog" src="../assets/image/login.png" alt="ilustração">
             </div>
-            <div class="form-group">
-                <label for="senha"><img class="iconS2" width="24" height="24" src="https://img.icons8.com/metro/26/lock.png" alt="lock"/></label>
-                <input type="password" name="senha" id="senha2" placeholder="Senha" />
-            </div>
-            <div class="form-group">
-                <input type="checkbox" name="termos" id="termos" class="termos" />
-                <label for="termos" class="termos"><span><span></span></span>Manter Conectado</label>
-            </div>
-            <div class="form-button">
-                <a href="login.html"><input type="submit" name="cadastro" id="cadastro" class="form-submit" value="Entrar" /></a>
-            </div>
-            <div id="redes">
-                <p>Ou se conecte com</p>
-                <img class="iconFacebook" width="38" height="38" src="https://img.icons8.com/fluency/48/facebook.png" alt="facebook"/>
-                <img class="iconGoogle" width="36" height="36" src="https://img.icons8.com/fluency/48/google-logo.png" alt="google-logo"/>
-                <img class="iconTwitter" width="41" height="41" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"/>
-            </div>
-        </form> 
-        <div>
-            <img id="imgLog" src="../assets/image/login.png" alt="ilustração">
         </div>
-</main>
+    </main>
     <footer>
         <p>Introdução ao Desenvolvimento de Páginas Web - TSI</p>
         <p>Ana Ligia, Eduardo e Gabriel Albino</p>
         <p>Copyright© 2024 IFSP - Campus Araraquara</p>
     </footer>
 </body>
+</html>

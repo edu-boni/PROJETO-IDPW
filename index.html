@@ -10,37 +10,53 @@
     <title>Livrai-nos</title>
 </head>
 <body class="corpoHome">
+    <!-- Cabeçalho da página -->
     <header class="cabecalhoHome">
         <nav>
             <ul>
+                <!-- Itens de navegação -->
                 <li><a href="index.html" class="selecionado">Home</a></li>
                 <li><a href="public/login.html">Login</a></li>
-                <li><a href="public/cadastro.html">Cadastro</a></li>
                 <li><a href="public/sobre.html">Sobre</a></li>
             </ul>
         </nav>
-        <!-- <form action="logado/inicio.html"> 
+        <!-- Formulário de login comentado (não exibido na página) -->
+        <!--
+        <form action="logado/inicio.html"> 
             <h4>Login</h4>
             <input type="email" placeholder="E-mail">
             <input type="password" placeholder="Senha">
             <a href="logado/inicio.html"><input type="submit" class="btn_entrar" value="Entrar" style="cursor: pointer;"></a>
-        </form>-->
+        </form>
+        -->
     </header>
-
+    
+    <!-- Seção Principal da Página Index -->
     <main id="homePage">
+        <!-- Bloco para imagem introdutória -->
         <div>
             <img class="intro" src="assets/image/intro.png" alt="ilustração">
         </div>
+        
+        <!-- Bloco de texto principal -->
         <div class="texto">
+            <!-- Logo do site -->
             <img src="assets/image/logo_branca.png" alt="Livra-nos">
-            <p style="font-size: 18px;text-align: justify;">Mergulhe em avaliações autênticas, descubra recomendações e construa sua estante digital com seus favoritos, criando um universo literário só seu.</p>
+            
+            <!-- Parágrafo com descrição -->
+            <p style="font-size: 18px;text-align: justify;">
+                Mergulhe em avaliações autênticas, descubra recomendações e construa sua estante digital com seus favoritos, criando um universo literário só seu.
+            </p>
+            
+            <!-- Links para outras páginas -->
             <div>
-            <a href="public/cadastro.html" class="cadastro">Cadastre-se</a>
-            <a href="#saibaMais" class="saibaMais">Saiba Mais</a>
+                <a href="public/cadastro.html" class="cadastro">Cadastre-se</a>
+                <a href="public/sobre.html" class="saibaMais">Saiba Mais</a>
             </div>
-        </div> 
+        </div>
     </main>
 
+    <!-- Rodapé da página -->
     <footer>
         <p>Introdução ao Desenvolvimento de Páginas Web - TSI</p>
         <p>Ana Ligia, Eduardo e Gabriel Albino</p>
