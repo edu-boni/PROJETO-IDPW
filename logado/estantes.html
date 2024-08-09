@@ -36,11 +36,16 @@
         </nav>
     </header>
     <main>
+        <!-- Página de estantes -->
         <h2>Estantes</h2>
+        <!-- Inicia uma seção com um id específico que cobre o conteúdo da página -->
         <section id="biblioteca">
             <h3>Lendo</h3>
+            <!-- Divisão dentro da seção que cria um "card-pai". Cada card é uma estante do usuário-->
             <div id="cards-biblioteca">
+                <!-- Divisão que cria os "cards-filhos" -->
                 <div class="card-biblioteca">
+                    <!-- Divisão para informações específicas do livro e estado de leitura do usuário (com hover em certas informações)-->
                     <div class="container-imagem">
                         <img class="lanc" src="../assets/image/admiravel.jpg" alt="Admirável Mundo Novo">
                         <div class="detalhes">
@@ -48,7 +53,7 @@
                             <p>Data de Leitura: Indefinido</p>
                         </div>
                     </div>
-                
+                    <!-- Divisão inferior à imagem do livro que coloca o quanto o usuário avançou na leitura-->
                     <div class="barra-progresso">
                         <div class="conteudo-barra" style="width: 50%;"></div>
                         <p>50%</p>
@@ -69,6 +74,7 @@
                         <p>27%</p>
                     </div>
                 </div>
+                <!-- Coloca, no card da estante, uma bookmark de identificação dela -->
                 <div class="bookmark" style="background-color: #52697d;"></div>
             </div>
 
@@ -310,12 +316,7 @@
                         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-solid fa-heart" style="color: #B42B30;"></i>
                     </p>
-                </div>
-                
-                
-                
-                
-                
+                </div>   
             </div>
             <a href="biblioteca.html#page1" class="btn">Ver todos os seus livros</a>
         </section>

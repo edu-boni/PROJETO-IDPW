@@ -36,13 +36,17 @@
         </nav>
     </header>
     <main>
-        <section id="crime_martin" class="mostrar">
+        <!-- Página de livros -->
+        <!-- Inicia a seção do livro específico (repete para todos)-->
+        <section id="crime_martin" class="mostrar"> <!-- Inicia as seções com class mostrar, que no CSS é a responsável por mostrar apenas o que o usuário clicou (target) e manter as demais display:none-->
             <div class="livros">
+                <!-- Tag que representa onde estará localizado a capa do livro, a classificação e o estado de leitura -->
                 <aside id="livro">
                     <div class="container">
                         <img class="liv" src="https://m.media-amazon.com/images/I/71l6UlO3TxL._AC_UL320_.jpg"
                             alt="Crime e Castigo">
                         <div class="adicionar_livro">
+                            <!-- Ícones das estrelas de classificação -->
                             <p style="text-align: center;" class="stars"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
@@ -53,16 +57,19 @@
                             <button class="botao_rm"><i class="fa-regular fa-trash-can"></i> Remover da estante</button>
                         </div>
                     </div>
+                    <!-- Divisão com um card, ao lado da imagem do livro, com as principais informações dele -->
                     <div id="cards-livros">
                         <div class="card-livros">
                             <h2>Crime e Castigo</h2>
                             <p class="autor">Fiodor Dostoiévski | Traduzido por Oleg Almeida</p>
+                            <!-- Ícones que representam a média da avaliação do livro -->
                             <p class="stars"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 4.8
                             </p>
+                            <!-- Tag para diminuir a informação  -->
                             <small>2.841 avaliações de leitores</small>
                             <p>"Crime e castigo" é um daqueles romances universais que, concebidos no decorrer do
                                 romântico século XIX, abriram caminhos ao trágico realismo literário dos tempos
@@ -73,6 +80,7 @@
                                 as partes do mundo. O fascinante efeito que produz a leitura de "Crime e castigo" -
                                 angústia, revolta e compaixão renovadas a cada página com um desenlace aliviador -
                                 poderia ser comparado à catarse dos monumentais dramas gregos.</p>
+                            <!-- Pequena divisão, dentro do card, para especificações do livro -->
                             <div class="specs">
                                   <ul class="ul-buscar">
                                 <li><p><span class="span-spec">Editora: </span> Martin Claret; Edição de luxo </p></li>
@@ -82,9 +90,10 @@
                                 <li><p><span class="span-spec">ISBN: </span>8544002161</p></li> 
                             </ul> 
                             </div>
-                          
+                            <!-- Fonte da informação num texto menor -->
                             <small>Fonte: Amazon.com.br</small>
                         </div>  
+                        <!-- Divisão que fica inferior ao card para classificar as categorias do livro -->
                         <div class="tropos">
                             <button class="btn-tropo">Romances</button>
                             <button class="btn-tropo">Literatura Clássica</button>
@@ -103,6 +112,7 @@
                     <div class="container">
                         <img class="liv" src="https://m.media-amazon.com/images/I/517DdyXpc5L._SY445_SX342_.jpg"
                             alt="Crime e Castigo">
+                        <!-- Divisão para criar uma simulação de funcionalidade de adicionar livro -->
                         <div class="adicionar_livro">
                             <button class="botao_add">+ Adicionar na estante</button>
                             <div class="opcoes_add">
