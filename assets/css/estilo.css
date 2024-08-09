@@ -1103,6 +1103,7 @@ table{
 #sobre{
   display: flex;
   justify-content: flex-start;
+  margin: 20px 0 0 0;
 }
 .sobreCards{
   min-height: 100vh;
@@ -1360,3 +1361,8 @@ table{
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .cabecalhoHome nav li a, .cabecalhoHome nav li a:hover{
+    padding: 10px;
+  }
+}
