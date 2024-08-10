@@ -993,6 +993,8 @@ small {
   opacity: 70%;
 }
 
+/*PERFIL*/
+
 #perfil{
   display: flex;
   flex-direction: row;

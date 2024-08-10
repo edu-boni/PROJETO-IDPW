@@ -11,9 +11,11 @@
     <title>Livrai-nos</title>
 </head>
 <body>
+    <h1 style="display: none;">Livrai-nos</h1>
     <header>
-        <a href="inicio.html"><img src="../assets/image/logo_branca.png" alt="Livrai-nos" id="logo"></a>
+        <a href="inicio.html"><img src="../assets/image/logo_branca.png" alt="Livrai-nos"></a>
         <nav id="NavLogado">
+            <h2 style="display: none;">Menu</h2>
             <ul>
                 <li><a href="inicio.html">Início</a></li>
                 <li><a href="booktubers.html" class="link_selecionado">Booktube</a></li>
@@ -21,59 +23,42 @@
                 <li><a href="biblioteca.html#page1">Minha biblioteca</a></li>
                 <li><a href="perfil.html">Meu perfil</a></li>
                 <li>
-                    <form action="busca_livro.html" method="get">
-                        <input type="text" name="q" placeholder="Pesquisar">
-                        <button type="submit" id="lupa" aria-label="Pesquisar">
-                            <span class="material-symbols-outlined">search</span>
-                        </button>
+                    <form action="">
+                        <input type="text" placeholder="Pesquisar">
+                        <a href="busca_livro.html" id="lupa"><span class="material-symbols-outlined">search</span></a>
                     </form>
                 </li>
-                 <li><a href="../index.html" aria-label="Sair"><i class="fas fa-sign-out"></i></a></li>
+                <li><a href="../index.html"><i class="fas fa-sign-out"></i></a></li>
             </ul>
         </nav>
     </header>
-    <!-- Corpo principal da página -->
     <main id="booktube">
         <div id="topo">
-            <!-- Seção para Booktube e recomendações -->
-            <section id="cabecalho_booktube">
+        <div class="bloco1">
+        <section id="cabecalho_booktube">
+            <div>
+            <h2 style="display: none;">Booktube</h2>
+            <img src="../assets/image/logo_booktube.png" alt="Booktube" id="logo_booktube">
+            </div>
+            <section id="inscricoes">
+                <h3>Minhas inscrições</h3>
                 <div>
-                    <!-- Logo do Booktube -->
-                    <img src="../assets/image/logo_booktube.png" alt="Booktube" id="logo_booktube">
+                    <a href="https://www.youtube.com/LivrariaemCasa" target="_blank"><img src="https://yt3.googleusercontent.com/J5EpRxKgXhTEloQt_7N4ZIaqbBbJrQ0i0bNeuaOsOra_3L-atfpYPhWxEycBcKEz5pEDw3xlJg=s176-c-k-c0x00ffffff-no-rj" alt="Livraria em Casa"></a>
+                    <a href="https://www.youtube.com/@aquelegf" target="_blank"><img src="https://yt3.googleusercontent.com/3kMFA8Qg83-E7HLMSg_JWvo3Y2-9nPeOXQG1tXjR88LOFOHecWb2VNabrZR0M-iO9Sk_bpssIQ=s176-c-k-c0x00ffffff-no-rj" alt="Geek Freak"></a>
+                    <a href="https://www.youtube.com/@BeatrizPaludetto" target="_blank"><img src="https://yt3.googleusercontent.com/RZHUAOi5_gj0nymoutB-K-5WPh9B-L-OPqRhDrmLsEhmrO2VtTcV4tMRNHxETC8vuAdkB0KE6A=s176-c-k-c0x00ffffff-no-rj" alt="Beatriz Paludetto"></a>
+                    <a href="https://www.youtube.com/EstanteC%C3%B3smica" target="_blank"><img src="https://yt3.googleusercontent.com/llwgBuqaPg2CI_Euj-pT9zhC72e4ZnIjWYb3eVkiKXiBQKMrDPanCdo55EZ8zGLO8oY9NTtSnGs=s160-c-k-c0x00ffffff-no-rj" alt="Estante Cósmica"></a>
                 </div>
-                <!-- Seção de inscrições no Booktube -->
-                <section id="inscricoes">
-                    <h3>Minhas inscrições</h3>
-                    <div>
-                        <!-- Links para canais de YouTube com imagens -->
-                        <a href="https://www.youtube.com/LivrariaemCasa" target="_blank" aria-label="Livraria em Casa">
-                            <img src="https://yt3.googleusercontent.com/J5EpRxKgXhTEloQt_7N4ZIaqbBbJrQ0i0bNeuaOsOra_3L-atfpYPhWxEycBcKEz5pEDw3xlJg=s176-c-k-c0x00ffffff-no-rj" alt="Livraria em Casa">
-                        </a>
-                        <a href="https://www.youtube.com/@aquelegf" target="_blank" aria-label="Geek Freak">
-                            <img src="https://yt3.googleusercontent.com/3kMFA8Qg83-E7HLMSg_JWvo3Y2-9nPeOXQG1tXjR88LOFOHecWb2VNabrZR0M-iO9Sk_bpssIQ=s176-c-k-c0x00ffffff-no-rj" alt="Geek Freak">
-                        </a>
-                        <a href="https://www.youtube.com/@BeatrizPaludetto" target="_blank" aria-label="Beatriz Paludetto">
-                            <img src="https://yt3.googleusercontent.com/RZHUAOi5_gj0nymoutB-K-5WPh9B-L-OPqRhDrmLsEhmrO2VtTcV4tMRNHxETC8vuAdkB0KE6A=s176-c-k-c0x00ffffff-no-rj" alt="Beatriz Paludetto">
-                        </a>
-                        <a href="https://www.youtube.com/EstanteC%C3%B3smica" target="_blank" aria-label="Estante Cósmica">
-                            <img src="https://yt3.googleusercontent.com/llwgBuqaPg2CI_Euj-pT9zhC72e4ZnIjWYb3eVkiKXiBQKMrDPanCdo55EZ8zGLO8oY9NTtSnGs=s160-c-k-c0x00ffffff-no-rj" alt="Estante Cósmica">
-                        </a>
-                    </div>
-                </section>
             </section>
-            <!-- Seção para recomendações de vídeos -->
-            <section id="recomendado">
-                <h3>Recomendado para você</h3>
-                <!-- Vídeo incorporado do YouTube -->
-                <iframe src="https://www.youtube.com/embed/U7p69hWUkSc?si=UYxPdeYVB8mApXa1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
+        </section>
+        <section id="recomendado">
+            <h3>Recomendado para você</h3>
+            <iframe src="https://www.youtube.com/embed/U7p69hWUkSc?si=UYxPdeYVB8mApXa1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
         </div>
-        
-        <!-- Seção lateral com canais recomendados -->
+        <div class="bloco2">
         <aside id="canais">
             <h4>Canais recomendados</h4>
             <div id="cards_canais">
-                <!-- Cada canal é representado por uma imagem e um nome -->
                 <div class="canal">
                     <img src="https://yt3.googleusercontent.com/ytc/AIdro_koyMAErA6rIGv9tceiFXd_TJAogI_mwuBzYDEY0fXGKQ=s176-c-k-c0x00ffffff-no-rj" alt="Antofágica">
                     <p>Antofágica</p>
@@ -100,40 +85,40 @@
                 </div>
             </div>
         </aside>
-        <!-- Seção para vídeos populares -->
-        <section id="populares">
-            <h4>Vídeos populares</h4>
-            <div id="cards_populares">
-                <!-- Cada vídeo é representado por uma miniatura, título e informações adicionais -->
-                <div class="video">
-                    <img src="https://img.youtube.com/vi/Mux5uIvI6-Q/hqdefault.jpg" alt="Booktube video 1">
-                    <p>Título do vídeo 1</p>
-                </div>
-                <div class="video">
-                    <img src="https://img.youtube.com/vi/7CZsmnQ-8QI/hqdefault.jpg" alt="Booktube video 2">
-                    <p>Título do vídeo 2</p>
-                </div>
-                <div class="video">
-                    <img src="https://img.youtube.com/vi/DQhQEl68W4s/hqdefault.jpg" alt="Booktube video 3">
-                    <p>Título do vídeo 3</p>
-                </div>
-                <div class="video">
-                    <img src="https://img.youtube.com/vi/X9ZxCqzZmrk/hqdefault.jpg" alt="Booktube video 4">
-                    <p>Título do vídeo 4</p>
-                </div>
-                <div class="video">
-                    <img src="https://img.youtube.com/vi/Uj7Lfj7F3R8/hqdefault.jpg" alt="Booktube video 5">
-                    <p>Título do vídeo 5</p>
-                </div>
-                <div class="video">
-                    <img src="https://img.youtube.com/vi/MkGr4zFGvLk/hqdefault.jpg" alt="Booktube video 6">
-                    <p>Título do vídeo 6</p>
-                </div>
+        </div>
+        </div>
+        <section id="videos">
+            <h3 style="display: none;">Vídeos</h3>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=bxbc4JsXa9c" target="_blank"><img src="https://i.ytimg.com/vi/bxbc4JsXa9c/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLC3HbE4FEnB33klvy5Oc1z3fnJLnw" alt="Capa de vídeo"></a>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=k74O3m87IT8" target="_blank"><img src="https://i.ytimg.com/vi/k74O3m87IT8/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA-JJ9k6CmHnaq_TShHMGZv9QfJEA" alt="Capa de vídeo"></a>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=kvg-Tv75Jpo" target="_blank"><img src="https://i.ytimg.com/vi/kvg-Tv75Jpo/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAdSjayMy_ol7BWTxiO3Gudzn2lWA" alt="Capa de vídeo"></a>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=Dmr-4OFaj4c" target="_blank"><img src="https://i.ytimg.com/vi/Dmr-4OFaj4c/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDcYOHdjci2j2ViHgGvGx6KJOYLCA" alt="Capa de vídeo"></a>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=h4i4f6KUoyA" target="_blank"><img src="https://i.ytimg.com/vi/h4i4f6KUoyA/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCGWSMvq5GDN6b6F1Si6G1yJdu0MA" alt="Capa de vídeo"></a>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=GBKn1kQYYMc" target="_blank"><img src="https://i.ytimg.com/vi/GBKn1kQYYMc/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA_4gaU2SV1Wlo7VNSRCp8vuDwwPQ" alt="Capa de vídeo"></a>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=GhR8OkY0k0I" target="_blank"><img src="https://i.ytimg.com/vi/GhR8OkY0k0I/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD652pSFXre5gRt23OPaPeMQhrWRw" alt="Capa de vídeo"></a>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=oPl506PDnsQ" target="_blank"><img src="https://i.ytimg.com/vi/oPl506PDnsQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD-niGmaL2wmiV2Y2rRdGrUsRC3wg" alt="Capa de vídeo"></a>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Livrai-nos. Todos os direitos reservados.</p>
+        <p>Introdução ao Desenvolvimento de Páginas Web - TSI</p>
+        <p>Ana Ligia, Eduardo e Gabriel Albino</p>
+        <p>Copyright© 2024 IFSP - Campus Araraquara</p>
     </footer>
 </body>
 </html>
